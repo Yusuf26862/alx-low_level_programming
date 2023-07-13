@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-/* Assign the character */
-    char Mystr[] = "\"Programming is like building a multilingual puzzle";
-    
-    puts(Mystr); /* writing the string to stdout */
-    
-    return 0;
+/* Assign thei character */
+char Mystr[] = "\"Programming is like building a multilingual puzzle";
+puts(Mystr); /* writing the string to stdout */
+return (0);
 }
