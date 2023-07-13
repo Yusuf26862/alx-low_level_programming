@@ -2,10 +2,10 @@
 
 int main()
 {
-	//string initialisation
+/* Assign the character */
     char Mystr[] = "\"Programming is like building a multilingual puzzle";
     
-    puts(Mystr); //writing the string to stdout
+    puts(Mystr); /* writing the string to stdout */
     
     return 0;
 }
