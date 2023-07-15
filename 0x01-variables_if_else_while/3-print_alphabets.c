@@ -16,9 +16,9 @@ int main(void)
 		putchar(alp);
 	}
 	for (calp = 'A'; calp <= 'Z'; calp++)
-        {
-                putchar(calp);
-        }
+	{
+		putchar(calp);
+	}
 	putchar('\n');
 	return (0);
 }
