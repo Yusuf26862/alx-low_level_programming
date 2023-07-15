@@ -10,16 +10,14 @@ int main(void)
 {
 	char alp;
 
-	for (alp = 'a'; alp <= 'z'; alp++)
+	alp = 'a';
+	while (alp <= 'z')
 	{
-		if (alp == 'e' || alp == 'q')
-		{
-			putchar('\0');
-		}
-		else
+		if ((alp != 'e' && alp != 'q') && alp <= 'z')
 		{
 			putchar(alp);
 		}
+		alp++;
 	}
 	putchar('\n');
 	return (0);
