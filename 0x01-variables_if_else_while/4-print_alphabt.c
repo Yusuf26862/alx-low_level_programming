@@ -12,7 +12,14 @@ int main(void)
 
 	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-		putchar(alp);
+		if (alp == 'e' || alp == 'q')
+		{
+			putchar('\0');
+		}
+		else
+		{
+			putchar(alp);
+		}
 	}
 	putchar('\n');
 	return (0);
