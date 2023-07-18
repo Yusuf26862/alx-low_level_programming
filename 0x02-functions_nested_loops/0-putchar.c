@@ -7,5 +7,13 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char* n = "_putchar";
+	int c = 0;
+
+	while (n[c] != '\0')
+	{
+		putchar(n[c]);
+		c++;
+	}
+	putchar('\n');
 }
