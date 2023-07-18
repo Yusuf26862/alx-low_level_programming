@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _putchar - print _putchar
  *
 	 * Return: Always 0.
 	 */
-int main(void)
+int _putchar(void)
 {
 	char *n = "_putchar";
 	int c = 0;
