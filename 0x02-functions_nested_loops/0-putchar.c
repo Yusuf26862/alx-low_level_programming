@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ * main - prints "putchar" with '_' in front
  * _putchar - print _putchar
  *
  * Return: Always 0.
