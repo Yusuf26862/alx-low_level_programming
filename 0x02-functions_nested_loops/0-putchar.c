@@ -5,7 +5,7 @@
  *
 	 * Return: Always 0.
 	 */
-int _putchar(char)
+int _putchar(char d)
 {
 	char *n = "_putchar";
 	int c = 0;
