@@ -12,5 +12,12 @@ int _abs(int c);
 int _abs(int c)
 {
 	c = abs(c);
-	return (0);
+	if (c > 0)
+	{
+		return (c);
+	}
+	else
+	{
+		return (-c);
+	}
 }
