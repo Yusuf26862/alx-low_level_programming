@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * times_table - prints every minute of the day
+ * times_table - prints times table to 9
  *
  */
 void times_table(void);
@@ -27,8 +27,10 @@ void times_table(void)
 			else
 			{
 				_putchar((n2 / 10) + '0');
-			_putchar('\n');
+			}
+			_putchar((pd % 10) + '0');
 		}
 		n1++;
+		_putchar('\n');
 	}
 }
