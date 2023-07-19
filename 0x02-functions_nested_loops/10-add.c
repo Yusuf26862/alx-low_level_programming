@@ -4,13 +4,15 @@
 /**
  * add - adds two value together
  *
- * @a, b: The character to be checked.
+ * @a: first to add to second.
+ * @b: second int to add to first.
  *
- * Return: the sum of the 2
+ * Return: the sum of the result of c
  */
-int _abs(int a, b);
-int _abs(int a, b)
+int add(int a, int b);
+int add(int a, int b)
 {
 	int c = a + b;
+
 	return (c);
 }
