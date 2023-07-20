@@ -23,4 +23,5 @@ void more_numbers(void)
 		times++;
 		_putchar('\n');
 	}
+	return (0);
 }
