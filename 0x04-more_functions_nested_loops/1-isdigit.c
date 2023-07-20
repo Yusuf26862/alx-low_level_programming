@@ -3,17 +3,17 @@
 #include <ctype.h>
 
 /**
- * _isupper - check the alphabet if it is in uppercase.
+ * _isdigit - check if the character is a number.
  *
  * @c: The character to be checked.
  *
  * Return: 1 if character is lowercase, 0 otherwise.
  */
 
-int _isupper(int c);
-int _isupper(int c)
+int _isdigit(int c);
+int _isdigit(int c)
 {
-	if (isupper(c))
+	if (isdigit(c))
 	{
 		return (1);
 	}
