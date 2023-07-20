@@ -12,6 +12,7 @@ void more_numbers(void);
 void more_numbers(void)
 {
 	int n;
+	int times;
 
 	times = 0;
 	while (times < 10)
