@@ -17,7 +17,7 @@ void more_numbers(void)
 	times = 0;
 	while (times < 10)
 	{
-		for (n = 0; n < 10; n++)
+		for (n = 0; n < 14; n++)
 		{
 			_putchar('0' + n);
 		}
