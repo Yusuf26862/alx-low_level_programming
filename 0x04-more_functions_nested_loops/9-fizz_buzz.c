@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * fizzbuzz - print numbers from 1 - 100 and check for fizz, buzz or fizzbuzz
+ * fizz_buzz - print numbers from 1 - 100 and check for fizz, buzz or fizzbuzz
  *
  * return - always 0
  *
  */
 
-void fizzbuzz(void);
-void fizzbuzz(void)
+void fizz_buzz(void);
+void fizz_buzz(void)
 {
 	int n;
 
@@ -36,5 +36,4 @@ void fizzbuzz(void)
 		printf(" ");
 	}
 	printf("\n");
-	return (0);
 }
