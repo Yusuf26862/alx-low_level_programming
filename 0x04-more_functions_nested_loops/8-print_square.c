@@ -13,13 +13,19 @@ void print_square(int size)
 	int times;
 
 	times = 0;
-	while (times < size)
+	if (size < 0)
 	{
-		for (n = 0; n < size; n++)
+		while (times < size)
 		{
-			_putchar('#');
+			for (n = 0; n < size; n++)
+			{
+				_putchar('#');
+			}
+			times++;
+			_putchar('\n');
 		}
-		times++;
+	else
+	{
 		_putchar('\n');
 	}
 }
