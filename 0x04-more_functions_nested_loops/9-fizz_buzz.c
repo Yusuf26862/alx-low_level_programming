@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - print numbers from 1 - 100 and check for fizz, buzz or fizzbuzz
+ * main - Prints the numbers from 1-100.
  *
- * return - always 0
+ * Return: Always 0.
  *
  */
 
@@ -38,4 +38,5 @@ int main(void)
 		printf(" ");
 	}
 	printf("\n");
+	return (0);
 }
