@@ -10,7 +10,7 @@
  */
 
 void print_lines(int n);
-void print lines(int n)
+void print_lines(int n)
 {
 	int m;
 
@@ -24,5 +24,4 @@ void print lines(int n)
 		m++;
 	}
 	_putchar('\n');
-	return (0);
 }
