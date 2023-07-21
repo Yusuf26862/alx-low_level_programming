@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * fizz_buzz - print numbers from 1 - 100 and check for fizz, buzz or fizzbuzz
@@ -8,8 +7,7 @@
  *
  */
 
-void fizz_buzz(void);
-void fizz_buzz(void)
+int main(void)
 {
 	int n;
 
@@ -33,6 +31,10 @@ void fizz_buzz(void)
 			printf("%d", n);
 		}
 		n++;
+		if (n == 100)
+		{
+			break;
+		}
 		printf(" ");
 	}
 	printf("\n");
