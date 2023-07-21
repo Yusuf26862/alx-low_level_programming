@@ -3,17 +3,28 @@
 int main(void)
 {
 	int n;
-	int times;
 
-	times = 0;
-	while (times < 10)
+	n = 1;
+	while (n <= 100)
 	{
-		for (n = 0; n < 10; n++)
+		if (((n % 3) == 0) && ((n % 5) == 0))
 		{
-			putchar('0' + n);
+			printf("FizzBuzz");
 		}
-		putchar('\n');
-		times++;
+		else if ((n % 3) == 0)
+		{
+			printf("Fizz");
+		}
+		else if ((n % 5) == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", n);
+		}
+		n++;
+		printf(" ");
 	}
-	return(0);
+	printf("\n");
 }
