@@ -2,15 +2,15 @@
 #include "main.h"
 
 /**
- * print_lines - print certain number of lines.
+ * print_line - print certain number of lines.
  * @n: the number of lines to be printed.
  *
  * return - always 0
  *
  */
 
-void print_lines(int n);
-void print_lines(int n)
+void print_line(int n);
+void print_line(int n)
 {
 	int m;
 
