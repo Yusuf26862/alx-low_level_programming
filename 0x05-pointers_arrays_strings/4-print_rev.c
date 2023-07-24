@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_rev - check the string in reverse.
@@ -12,11 +13,15 @@ void print_rev(char *s)
 {
 	int len = 0, index;
 
-	while (s[index++])
+	while (*s++)
+	{
 		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		putchar(s[index]);
-
+	}
+//	s--;
+	for (index = len; index >= 0; index--)
+	{
+		putchar(*s);
+//		s--;
+	}
 	putchar('\n');
 }
