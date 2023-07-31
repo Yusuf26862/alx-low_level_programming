@@ -13,6 +13,7 @@
 char *_strchr(char *s, char c);
 char *_strchr(char *s, char c)
 {
-	strchr(s, c);
-	return (s);
+	char *result = strchr(s, c);
+
+	return (result);
 }
