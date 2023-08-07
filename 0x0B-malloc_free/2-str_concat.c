@@ -37,13 +37,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (index1 = 0; s1[index1] != '\0'; index1++)
+	while (s1[index1] != '\0')
 	{
 		nstr[index1] = s1[index1];
+		index1++
 	}
-	for (index = 0; s2[index] != '\0'; index++)
+	while (s2[index] != '\0')
 	{
 		nstr[index1] = s2[index];
+		index1++;
+		index++;
 	}
 	nstr[index1] = '\0';
 	return (nstr);
