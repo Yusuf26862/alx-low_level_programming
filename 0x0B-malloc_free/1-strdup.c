@@ -21,6 +21,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	slen = 0;
+
 	for (index = 0; str[index]; index++)
 	{
 		slen++;
