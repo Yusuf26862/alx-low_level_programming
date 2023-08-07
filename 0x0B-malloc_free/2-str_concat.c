@@ -1,53 +1,38 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * str_concat - Concatenates two strings.
+ * @s1: The string to be concatenated upon.
+ * @s2: The string to be concatenated to s1.
+ *
+ * Return: If concatenation fails - NULL.
+ *         Otherwise - a pointer the newly-allocated space in memory
+ *                     containing the concatenated strings.
  */
-
-char *str_concat(char *s1, char *s2);
 char *str_concat(char *s1, char *s2)
 {
-	int index1, index;
-	char *nstr;
+	char *concat_str;
+	int index, concat_index = 0, len = 0;
 
 	if (s1 == NULL)
-	{
-		s1 == "";
-	}
+		s1 = "";
+
 	if (s2 == NULL)
-	{
-		s2 == "";
-	}
-	index1 = 0;
-	while (s1[index1] != '\0')
-	{
-		index1++;
-	}
-	index = 0;
-	while (s2[index] != '\0')
-	{
-		index++;
-	}
-	nstr = malloc(sizeof(char) * (index1 + index + 1));
-	if (nstr == NULL)
-	{
+		s2 = "";
+
+	for (index = 0; s1[index] || s2[index]; index++)
+		len++;
+
+	concat_str = (char *)malloc(sizeof(char) * len);
+
+	if (concat_str == NULL)
 		return (NULL);
-	}
-	while (s1[index1] != '\0')
-	{
-		nstr[index1] = s1[index1];
-		index1++
-	}
-	while (s2[index] != '\0')
-	{
-		nstr[index1] = s2[index];
-		index1++;
-		index++;
-	}
-	nstr[index1] = '\0';
-	return (nstr);
+
+	for (index = 0; s1[index]; index++)
+		concat_str[concat_index++] = s1[index];
+
+	for (index = 0; s2[index]; index++)
+		concat_str[concat_index++] = s2[index];
+
+	return (concat_str);
 }
