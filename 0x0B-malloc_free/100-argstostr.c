@@ -38,10 +38,11 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			nstr[k++] = '\n';
+			nstr[k++] = av[i][j];
 		}
-		nstr[l] = '\0';
-
-		return (nstr);
+		nstr[l] = '\n';
 	}
+	nstr[k] = '\0';
+
+	return (nstr);
 }
