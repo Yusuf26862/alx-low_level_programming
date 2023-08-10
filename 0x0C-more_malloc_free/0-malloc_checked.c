@@ -10,7 +10,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *ptr
+	void *ptr;
 
 	ptr = malloc(b);
 
@@ -18,5 +18,5 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
-	return (prt);
+	return (ptr);
 }
