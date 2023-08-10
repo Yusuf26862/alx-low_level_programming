@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		cons = malloc(sizeof(char) * (len1 + len2 + 1));
 	}
-	if (cons == NULL)
+	if (cons == 0)
 	{
 		return (NULL);
 	}
