@@ -41,11 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (n < len2 && i < (len1 + n))
 	{
-		cons[i++] = s2[i++];
+		cons[i++] = s2[j++];
 	}
 	while (n >= len2 && i < (len1 + len2))
 	{
-		cons[i++] = s2[i++];
+		cons[i++] = s2[j++];
 	}
 	cons[i] = '\0';
 
