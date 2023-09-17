@@ -2,18 +2,19 @@
 
 int main(void)
 {
-	int m;
+	char *m;
 	int n;
+	int o;
 
-	n = -3;
-	m = 0;
-	while (m < n)
+	n = 0;
+	m = "-I";
+
+	while (n < 4)
 	{
-		if (!(n <= 0))
-		{
-			putchar('_');
-		}
-	//	putchar('\n');
+	//	if (!(n <= 0))
+	//	{
+		putchar((m[0]) * n);
+	//	}
 		n++;
 	}
 	putchar('\n');
